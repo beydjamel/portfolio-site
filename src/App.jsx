@@ -4,9 +4,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import ThemeToggle from "./components/ThemeToggle";
 function App() {
   return (
     <main>
+      <ThemeToggle />
       <Hero />
       <About />
       <Skills />

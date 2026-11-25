@@ -1,13 +1,15 @@
 function About() {
   return (
-    <section id="about" className="bg-slate-900 px-6 py-24">
+    <section id="about" className="bg-slate-100 px-6 py-24 dark:bg-slate-900">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
-        <p className="text-lg text-slate-300 leading-relaxed">
-          I am a full stack web developer with experience building web
-          applications using React, Node.js, PHP, and MySQL. I focus on clean
-          code, responsive design, and solutions that are easy to maintain and
-          deploy.
+        <h2 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+          About Me
+        </h2>
+        <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300">
+          I am a software developer currently completing my internship, with a
+          focus on full stack web development. I build web applications using
+          React, Node.js, PHP, and MySQL, and I care about clean code,
+          responsive design, and solutions that are easy to maintain and deploy.
         </p>
       </div>
     </section>
