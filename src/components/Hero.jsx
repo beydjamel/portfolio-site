@@ -5,14 +5,17 @@ const fadeUp = {
   show: (delay) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay, ease: "easeOut" },
+    transition: { duration: 0.8, delay, ease: "easeOut" },
   }),
 };
 
 function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-white px-6 dark:bg-slate-950">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky-100 via-transparent to-indigo-100 dark:from-sky-900/30 dark:to-indigo-900/30" />
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-white px-6 pt-20 dark:bg-slate-950">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-1/3 h-96 w-96 -translate-x-1/2 rounded-full bg-amber-400/10 blur-3xl dark:bg-amber-500/10" />
+        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-sky-400/10 blur-3xl dark:bg-sky-500/10" />
+      </div>
 
       <div className="max-w-3xl text-center">
         <motion.p
@@ -20,7 +23,7 @@ function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="mb-4 font-medium text-sky-600 dark:text-sky-400"
+          className="mb-6 text-sm uppercase tracking-[0.3em] text-amber-600 dark:text-amber-400"
         >
           Hello, I'm
         </motion.p>
@@ -30,7 +33,7 @@ function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="mb-4 text-5xl font-bold text-slate-900 md:text-6xl dark:text-white"
+          className="mb-6 font-serif text-5xl font-bold text-slate-900 md:text-7xl dark:text-white"
         >
           Bey Djamel
         </motion.h1>
@@ -40,7 +43,7 @@ function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="mb-6 text-2xl font-semibold text-sky-600 dark:text-sky-400"
+          className="mb-6 text-xl tracking-wide text-slate-700 dark:text-slate-300"
         >
           Software Developer
         </motion.p>
@@ -50,10 +53,10 @@ function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="mx-auto mb-8 max-w-xl text-lg text-slate-600 dark:text-slate-400"
+          className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400"
         >
-          Currently in an internship, building web applications with React, PHP,
-          and MySQL.
+          Crafting full stack web applications with React, PHP, and MySQL, with
+          a focus on clean design and reliable performance.
         </motion.p>
 
         <motion.div
@@ -65,13 +68,13 @@ function Hero() {
         >
           <a
             href="#contact"
-            className="rounded-lg bg-sky-500 px-6 py-3 font-semibold text-white transition hover:bg-sky-400"
+            className="rounded-md bg-amber-500 px-8 py-3 font-semibold text-slate-950 transition hover:bg-amber-400"
           >
             Contact Me
           </a>
           <a
             href="#projects"
-            className="rounded-lg border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-md border border-amber-500/50 px-8 py-3 font-semibold text-amber-600 transition hover:border-amber-400 hover:text-amber-500 dark:text-amber-300 dark:hover:text-amber-200"
           >
             View Projects
           </a>
